@@ -10,11 +10,9 @@ export default function Home() {
   }
   console.log('h1 styles', h1Styles);
   return (
-    <div>
-      <h1 className={isServer ? 'server' : 'client'} style={h1Styles}>
-        {isServer ? 'server' : 'client'}
-      </h1>
-    </div>
+    <h1 className={isServer ? 'server' : 'client'} style={h1Styles}>
+      {isServer ? 'server' : 'client'}
+    </h1>
   )
 }
 
